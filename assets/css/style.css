@@ -1,0 +1,146 @@
+/*@import 'vendors/bs/bootstrap';*/
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #221D23;
+}
+.footer__listado {
+  display: flex;
+  color: #BABABA;
+  flex-grow: 4;
+}
+.footer li {
+  display: inline-block;
+}
+.footer__marca {
+  display: flex;
+  justify-content: center;
+  color: #BABABA;
+  flex-grow: 1;
+}
+
+.caracteristicas {
+  display: inline-block;
+}
+.caracteristicas__titulo {
+  text-align: center;
+}
+.caracteristicas__grafico {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 20% 0 20%;
+}
+.caracteristicas__estadisticas {
+  display: grid;
+}
+
+.banner__fondo {
+  background-image: url("../img/bg-hero.png");
+  background-position: center;
+  background-size: cover;
+  height: 48.125rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20%;
+}
+.banner__fondo--titulo {
+  display: grid;
+  width: 35%;
+}
+.banner__fondo--subtitulo {
+  display: grid;
+  width: 35%;
+}
+.banner__fondo--subtitulo p {
+  font-size: 20px;
+  color: #000000;
+  text-align: justify;
+}
+
+.barra-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.barra-nav__logo {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.barra-nav__menu {
+  display: flex;
+  flex-grow: 5;
+}
+.barra-nav__acceso {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.barra-nav__acceso p {
+  font-weight: bold;
+}
+.barra-nav__boton {
+  display: flex;
+  flex-grow: 1;
+}
+
+.barra-nav__menu li {
+  display: inline-block;
+}
+
+.precios__fondo {
+  background-image: url("../img/bg-price.png");
+  background-position: center;
+  background-size: cover;
+  height: 56.25rem;
+}
+
+.barra-nav__boton-estilo {
+  background-color: #2AB7CA;
+  color: #ffffff;
+  width: 110px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

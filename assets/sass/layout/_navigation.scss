@@ -1,0 +1,39 @@
+.barra-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+
+  &__logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 5;
+  }
+
+  &__acceso {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  &__boton {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+.barra-nav__menu li {
+  display: inline-block;
+}

@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $r-black;
+
+  &__listado {
+    display: flex;
+    color: $gray;
+    flex-grow: 4;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  &__marca {
+    display: flex;
+    justify-content: center;
+    color: $gray;
+    flex-grow: 1;
+  }
+}

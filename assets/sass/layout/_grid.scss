@@ -1,0 +1,17 @@
+.caracteristicas{
+  display: inline-block;
+
+  &__titulo{
+    text-align: center;
+
+  }
+  &__grafico{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 20% 0 20%;
+  }
+  &__estadisticas{
+    display: grid;
+
+  }
+}
