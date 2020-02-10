@@ -1,25 +1,54 @@
-.banner__fondo{
+
+.banner__fondo {
   background-image: url("../img/bg-hero.png");
   background-position: center;
   background-size: cover;
-  height: 48.125rem;
+  height: 51rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20%;
+  grid-template-rows: 1fr 1fr;
 
-  &--titulo{
+
+
+  &--titulo {
     display: grid;
     width: 35%;
-
+    margin-left: 5%;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 
-  &--subtitulo{
+  &--subtitulo {
     display: grid;
     width: 35%;
-    p{
+    margin-left: 5%;
+    height: 25%;
+
+    p {
       font-size: $large;
       color: $black;
       text-align: justify;
     }
   }
+}
+@media only screen and (max-width: 600px){
+  .banner__fondo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55rem;
+
+  }
+.banner__fondo--titulo{
+        text-align: center;
+        display: grid;
+        margin-left: 0;
+        width: 100%;
+
+  }
+  .banner__fondo--subtitulo{
+    display: grid;
+    width: 83%;
+    margin-left: 8%;
+    }
+
 }

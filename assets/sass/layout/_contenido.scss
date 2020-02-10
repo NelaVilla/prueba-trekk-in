@@ -1,6 +1,76 @@
-.precios__fondo{
+.caracteristicas__titulo{
+  text-align: center;
+}
+
+.caracteristicas{
+    &__contenido{
+    display: flex;
+    justify-content: center;
+  }
+
+    &__grafico{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+
+  }
+  &__estadisticas{
+    display: inline-block;
+    width: 40%;
+
+  }
+}
+@media only screen and (max-width: 600px){
+  .caracteristicas__titulo{
+    width: 100%;
+  }
+  .caracteristicas__grafico{
+    display: inline-block;
+    width: 100%;
+
+  }
+  .caracteristicas__estadisticas{
+    display: inline-block;
+  }
+}
+
+
+
+//precios
+.precios__fondo {
   background-image: url("../img/bg-price.png");
   background-position: center;
   background-size: cover;
   height: 56.25rem;
+}
+
+.precios__texto--titulo {
+  text-align: center;
+  padding-top: 12%;
+  color: $white;
+}
+
+
+.precios__ofertas {
+  display: flex;
+  justify-content: center;
+  font-family: $rale;
+
+  &--info {
+    display: inline-block;
+    background-color: $white;
+    margin: 3%;
+    padding: 2rem;
+  }
+
+  &--lista {
+    padding-left: 0;
+    font-size: $small;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    li {
+      list-style: initial;
+    }
+  }
 }

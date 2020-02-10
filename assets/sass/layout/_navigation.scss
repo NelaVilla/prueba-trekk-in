@@ -1,39 +1,59 @@
 .barra-nav {
-  display: flex;
+  display: grid;
+  position: relative;
   width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   background-color: $white;
 
   &__logo {
     display: flex;
-    flex-grow: 1;
+    grid-column-start: 1;
+    grid-column-end:2;
     justify-content: center;
   }
 
   &__menu {
     display: flex;
-    flex-grow: 5;
+    grid-column-start: 2;
+    grid-column-end:6;
   }
 
   &__acceso {
+    padding-top: 24px;
     display: flex;
-    flex-grow: 1;
+    grid-column-start: 9;
+    grid-column-end: 10;
     justify-content: center;
 
     p {
       font-weight: bold;
+
     }
   }
 
   &__boton {
+    padding-top: 24px;
     display: flex;
-    flex-grow: 1;
+    grid-column-start: 11;
+    grid-column-end:12;
   }
 }
 
 .barra-nav__menu li {
   display: inline-block;
+}
+
+@media only screen and (max-width: 766px) {
+  .barra-nav__logo{
+      justify-content:flex-start;
+    }
+
+  .barra-nav__menu {
+    display: none !important;
+
+  }
+  .barra-nav__acceso{ display: none !important }
+  .barra-nav__boton{ display: none !important }
+
 }
