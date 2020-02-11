@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Treek In</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -14,28 +15,31 @@
   <!---barra de navegacion-->
   <nav class="barra-nav">
     <div class="container row">
-    <div class="barra-nav__logo">
-      <img src="assets/img/Logo.svg" alt="logo trekkin">
-    </div>
-        <div class="barra-nav__menu">
-      <ul>
-        <li>
-          <p>Acerca de</p>
-        </li>
-        <li>
-          <p>Características</p>
-        </li>
-        <li>
-          <p>Precios</p>
-        </li>
-      </ul>
-    </div>
-    <div class="barra-nav__acceso">
-      <p>Iniciar Sesión</p>
-    </div>
-    <div class="barra-nav__boton">
-      <button type="button" name="button" class="barra-nav__boton-estilo">Registrate</button>
-    </div>
+      <div class="barra-nav__logo">
+        <img src="assets/img/Logo.svg" alt="logo trekkin">
+      </div>
+      <div class="barra-nav__menu">
+        <ul>
+          <li>
+            <p>Acerca de</p>
+          </li>
+          <li>
+            <p>Características</p>
+          </li>
+          <li>
+            <p>Precios</p>
+          </li>
+        </ul>
+      </div>
+      <div class="barra-nav__acceso">
+        <p>Iniciar Sesión</p>
+      </div>
+      <div class="barra-nav__boton">
+        <button type="button" name="button" class="barra-nav__boton-estilo">Registrate</button>
+      </div>
+      <div class="barra-nav__barras">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </nav>
   <!---Header Haz trekking-->
@@ -45,95 +49,97 @@
         <div class="banner__fondo--titulo">
           <h1>Haz Trekking sin parar </h1>
         </div>
-      <div class=" banner__fondo--subtitulo">
+        <div class=" banner__fondo--subtitulo">
           <p> Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
         </div>
       </div>
-      </div>
+    </div>
   </header>
   <!--Características--->
-  <section class="caracteristicas">
-    <div class="caracteristicas__titulo">
-      <h2>Características</h2>
-    </div>
-    <div class="caracteristicas__contenido">
-        <div class="caracteristicas__grafico">
-      <img src="assets/img/bar-graph.svg" alt="grafico">
-    </div>
+<section class="caracteristicas container">
+  <div class="caracteristicas__titulo">
+    <h2 class="titulo--carac">Características</h2>
+      </div>
+      <div class="caracteristicas__contenido">
+      <div class="caracteristicas__grafico">
+<img src="assets/img/bar-graph.svg" alt="imagen grafico" class="img--grafico">
+      </div>
       <div class="caracteristicas__estadisticas">
         <h3>Estadísticas de tu progreso</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit varius nulla, neque platea condimentum faucibus nunc nam dignissim tempus, convallis cursus justo quis molestie penatibus accumsan maecenas. Aptent phasellus tincidunt dictumst
-          fringilla netus, mauris scelerisque ornare nisi, malesuada imperdiet nam conubia. </p>
-      </div>
-    </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin, mauris at dictum porttitor, leo dui dictum lectus, sit amet lacinia mi elit vel tellus. Nam dolor ante, condimentum id faucibus vitae, sagittis et nunc. Nunc vestibulum felis eu odio convallis, quis interdum felis faucibus. Ut posuere sit amet quam ac commodo. Donec scelerisque ultricies posuere. Vestibulum tempus lorem eu ipsum gravida, id interdum mauris porta.</p>
 
-  </section>
-  <!---Precios--->
+      </div>
+</div>
+
+</section>
+
+    <!---Precios--->
   <section class="precios">
     <div class="precios__fondo">
+      <div class="container">
       <div class="precios__texto--titulo">
         <h2>Precios</h2>
       </div>
       <div class="container precios__ofertas">
+        <div class="row__precios1">
+          <div class="precios__ofertas--info">
+            <h4>Trekk-in Free</h4>
+            <h3>$ 0 / mes</h3>
 
-        <div class="precios__ofertas--info">
-          <h4>Trekk-in Free</h4>
-          <h3>$ 0 / mes</h3>
+            <ul class="precios__ofertas--lista">
+              <li>Ver mapas creados por usuarios </li>
+              <li>Conectar con otros usuarios</li>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </ul>
 
-          <ul class="precios__ofertas--lista">
-            <li>Ver mapas creados por usuarios </li>
-            <li>Conectar con otros usuarios</li>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </ul>
+            <button type="button" name="button" class="precios__ofertas--boton">Obtén Free</button>
+          </div>
 
-          <button type="button" name="button" class="precios__ofertas--boton">Obtén Free</button>
         </div>
+        <div class="row__precios2">
+          <div class="precios__ofertas--info">
+            <h4>Trekk-in Free</h4>
+            <h3>$ 3500 / mes</h3>
 
+            <ul class="precios__ofertas--lista">
+              <li>Ver mapas creados por usuarios </li>
+              <li>Conectar con otros usuarios</li>
+              <li>Definir mejores rutas</li>
+              <li>Mapas Online</li>
+              <li>Integración con otras aplicaciones</li>
+            </ul>
 
-        <div class="precios__ofertas--info">
-          <h4>Trekk-in Free</h4>
-          <h3>$ 3500 / mes</h3>
-
-          <ul class="precios__ofertas--lista">
-            <li>Ver mapas creados por usuarios </li>
-            <li>Conectar con otros usuarios</li>
-            <li>Definir mejores rutas</li>
-            <li>Mapas Online</li>
-            <li>Integración con otras aplicaciones</li>
-          </ul>
-
-          <button type="button" name="button" class="precios__ofertas--boton">Obtén Premium</button>
+            <button type="button" name="button" class="precios__ofertas--boton">Obtén Premium</button>
+          </div>
         </div>
-
-
-
       </div>
-
-
     </div>
-
+    </div>
   </section>
   <!---footer--->
-  <footer class="container footer">
-    <div class="footer__listado">
-      <ul>
-        <li>
-          <p>Legal</p>
-        </li>
-        <li>
-          <p>Cookies</p>
-        </li>
-        <li>
-          <p>Sobre Anuncios</p>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__marca">
-      <p>© 2018 Trekk-in SPA.</p>
+  <footer class="footer">
+    <div class="row">
+      <div class="footer__listado">
+
+        <ul>
+          <li>
+            <p>Legal</p>
+          </li>
+          <li>
+            <p>Cookies</p>
+          </li>
+          <li>
+            <p>Sobre Anuncios</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__marca">
+        <p>© 2020 Trekk-in SPA.</p>
+      </div>
     </div>
   </footer>
 

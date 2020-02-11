@@ -9,26 +9,25 @@
   &__logo {
     display: flex;
     grid-column-start: 1;
-    grid-column-end:2;
+    grid-column-end: 2;
     justify-content: center;
   }
 
   &__menu {
     display: flex;
     grid-column-start: 2;
-    grid-column-end:6;
+    grid-column-end: 6;
   }
 
   &__acceso {
     padding-top: 24px;
     display: flex;
     grid-column-start: 9;
-    grid-column-end: 10;
+    grid-column-end: 11;
     justify-content: center;
 
     p {
       font-weight: bold;
-
     }
   }
 
@@ -36,24 +35,90 @@
     padding-top: 24px;
     display: flex;
     grid-column-start: 11;
-    grid-column-end:12;
+    grid-column-end: 12;
   }
 }
 
 .barra-nav__menu li {
   display: inline-block;
 }
-
-@media only screen and (max-width: 766px) {
-  .barra-nav__logo{
-      justify-content:flex-start;
-    }
+@media  screen and (max-width: 320px) {
+  .barra-nav__logo {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
 
   .barra-nav__menu {
     display: none !important;
-
   }
-  .barra-nav__acceso{ display: none !important }
-  .barra-nav__boton{ display: none !important }
 
+  .barra-nav__acceso {
+    display: none !important;
+  }
+
+  .barra-nav__boton {
+    display: none !important;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+}
+@media  screen and (max-width: 600px) {
+  .barra-nav__logo {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .barra-nav__menu {
+    display: none !important;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+
+  .barra-nav__acceso {
+    display: none !important;
+  }
+
+  .barra-nav__boton {
+    display: none !important;
+  }
+}
+@media  screen and (max-width: 766px) {
+  .barra-nav__logo {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+
+  .barra-nav__menu {
+    display: none !important;
+  }
+
+  .barra-nav__acceso {
+    display: none !important;
+  }
+
+  .barra-nav__boton {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .barra-nav__barras {
+    display: none !important;
+  }
 }

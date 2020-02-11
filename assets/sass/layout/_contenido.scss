@@ -1,47 +1,61 @@
-.caracteristicas__titulo{
-  text-align: center;
-}
-
+//Características
 .caracteristicas{
-    &__contenido{
-    display: flex;
-    justify-content: center;
-  }
+  display: grid;
 
-    &__grafico{
-    display: flex;
-    width: 40%;
+  &__titulo{
+text-align: center;
+ }
+ &__contenido{
+display: grid;
+grid-template-columns: 30% 30%;
+justify-content: center;
+align-items: center;
+grid-column-gap: 10%;
+ }
+&__estadisticas{
+  text-align: justify;
+}
+}
+@media screen and (max-width: 320px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
     justify-content: center;
-
-  }
-  &__estadisticas{
-    display: inline-block;
-    width: 40%;
+    }
+    .titulo--carac{
+      font-size: 2rem;
+    }
+.caracteristicas__estadisticas{
+  width: 95%
+}
+.img--grafico{
+  width: 95%;
+}
+}
+@media screen and (max-width: 600px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
 
   }
 }
-@media only screen and (max-width: 600px){
-  .caracteristicas__titulo{
-    width: 100%;
-  }
-  .caracteristicas__grafico{
-    display: inline-block;
-    width: 100%;
-
-  }
-  .caracteristicas__estadisticas{
-    display: inline-block;
+@media screen and (max-width: 766px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
-
-
-
+@media screen and (max-width: 992px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 //precios
 .precios__fondo {
   background-image: url("../img/bg-price.png");
   background-position: center;
   background-size: cover;
-  height: 56.25rem;
+  height: auto;
 }
 
 .precios__texto--titulo {
@@ -50,14 +64,15 @@
   color: $white;
 }
 
-
 .precios__ofertas {
-  display: flex;
+  display: grid;
   justify-content: center;
   font-family: $rale;
+  grid-template-columns: 24% 25%;
+  grid-column-gap: 5%;
 
   &--info {
-    display: inline-block;
+    display: grid;
     background-color: $white;
     margin: 3%;
     padding: 2rem;
@@ -72,5 +87,29 @@
     li {
       list-style: initial;
     }
+  }
+}
+@media screen and (max-width: 320px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+  .precios__texto--titulo {
+    padding-top: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+  .precios__texto--titulo {
+    padding-top: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+  .precios__texto--titulo {
+    padding-top: 40%;
   }
 }

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  max-width: 100%;
+  width: 100%;
 }
 
 li {
@@ -55,26 +55,109 @@ h3 {
   }
 }
 .footer {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: #221D23;
+  width: 100%;
 }
 .footer__listado {
   display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
   color: #BABABA;
-  flex-grow: 4;
 }
 .footer li {
   display: inline-block;
 }
 .footer__marca {
+  padding-top: 11%;
   display: flex;
-  justify-content: center;
+  grid-column-start: 10;
+  grid-column-end: 12;
+  justify-content: right;
   color: #BABABA;
-  flex-grow: 1;
 }
 
+@media screen and (max-width: 320px) {
+  .footer__listado {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 13px;
+  }
+
+  .footer__marca {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__listado {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 15px;
+  }
+
+  .footer__marca {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__listado {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 17px;
+  }
+
+  .footer__marca {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer__listado {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 19px;
+  }
+
+  .footer__marca {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__listado {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    font-size: 21px;
+  }
+
+  .footer__marca {
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    text-align: center;
+    font-size: 21px;
+  }
+}
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -304,7 +387,7 @@ h3 {
   text-align: justify;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .banner__fondo {
     background-size: contain;
     background-repeat: no-repeat;
@@ -347,7 +430,7 @@ h3 {
   padding-top: 24px;
   display: flex;
   grid-column-start: 9;
-  grid-column-end: 10;
+  grid-column-end: 11;
   justify-content: center;
 }
 .barra-nav__acceso p {
@@ -364,9 +447,67 @@ h3 {
   display: inline-block;
 }
 
+@media only screen and (max-width: 320px) {
+  .barra-nav__logo {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .barra-nav__menu {
+    display: none !important;
+  }
+
+  .barra-nav__acceso {
+    display: none !important;
+  }
+
+  .barra-nav__boton {
+    display: none !important;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .barra-nav__logo {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .barra-nav__menu {
+    display: none !important;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+
+  .barra-nav__acceso {
+    display: none !important;
+  }
+
+  .barra-nav__boton {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 766px) {
   .barra-nav__logo {
     justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .barra-nav__barras {
+    display: flex;
+    align-self: center;
+    grid-column-start: 12;
+    grid-column-end: 13;
   }
 
   .barra-nav__menu {
@@ -381,43 +522,69 @@ h3 {
     display: none !important;
   }
 }
+@media only screen and (max-width: 1350px) {
+  .barra-nav__barras {
+    display: none !important;
+  }
+}
+.caracteristicas {
+  display: grid;
+}
 .caracteristicas__titulo {
   text-align: center;
 }
-
 .caracteristicas__contenido {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 30%;
   justify-content: center;
-}
-.caracteristicas__grafico {
-  display: flex;
-  width: 40%;
-  justify-content: center;
+  align-items: center;
+  grid-column-gap: 10%;
 }
 .caracteristicas__estadisticas {
-  display: inline-block;
-  width: 40%;
+  text-align: justify;
 }
 
-@media only screen and (max-width: 600px) {
-  .caracteristicas__titulo {
-    width: 100%;
+@media screen and (max-width: 320px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
-  .caracteristicas__grafico {
-    display: inline-block;
-    width: 100%;
+  .titulo--carac {
+    font-size: 2rem;
   }
 
   .caracteristicas__estadisticas {
-    display: inline-block;
+    width: 95%;
+  }
+
+  .img--grafico {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 766px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 .precios__fondo {
   background-image: url("../img/bg-price.png");
   background-position: center;
   background-size: cover;
-  height: 56.25rem;
+  height: auto;
 }
 
 .precios__texto--titulo {
@@ -427,12 +594,14 @@ h3 {
 }
 
 .precios__ofertas {
-  display: flex;
+  display: grid;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  grid-template-columns: 24% 25%;
+  grid-column-gap: 5%;
 }
 .precios__ofertas--info {
-  display: inline-block;
+  display: grid;
   background-color: #ffffff;
   margin: 3%;
   padding: 2rem;
@@ -447,6 +616,33 @@ h3 {
   list-style: initial;
 }
 
+@media screen and (max-width: 320px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+
+  .precios__texto--titulo {
+    padding-top: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+
+  .precios__texto--titulo {
+    padding-top: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .precios__ofertas {
+    grid-template-columns: 1fr;
+  }
+
+  .precios__texto--titulo {
+    padding-top: 40%;
+  }
+}
 .barra-nav__boton-estilo {
   background-color: #2AB7CA;
   color: #ffffff;
