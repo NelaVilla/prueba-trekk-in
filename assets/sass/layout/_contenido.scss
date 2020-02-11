@@ -12,9 +12,41 @@ justify-content: center;
 align-items: center;
 grid-column-gap: 10%;
  }
+
 &__estadisticas{
   text-align: justify;
 }
+}
+.img--grafico{
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  }
+  .img--grafico:hover{
+    opacity: 0.3;
+  }
+
+
+
+@media screen and (max-width: 600px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 50%;
+    justify-content: center;
+
+  }
+}
+@media screen and (max-width: 766px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .caracteristicas__contenido {
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 320px) {
   .caracteristicas__contenido {
@@ -30,25 +62,6 @@ grid-column-gap: 10%;
 .img--grafico{
   width: 95%;
 }
-}
-@media screen and (max-width: 600px) {
-  .caracteristicas__contenido {
-    grid-template-columns: 1fr;
-    justify-content: center;
-
-  }
-}
-@media screen and (max-width: 766px) {
-  .caracteristicas__contenido {
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 992px) {
-  .caracteristicas__contenido {
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
 }
 //precios
 .precios__fondo {
@@ -89,27 +102,29 @@ grid-column-gap: 10%;
     }
   }
 }
-@media screen and (max-width: 320px) {
+
+@media only screen and (max-width: 600px) {
+  .precios__ofertas {
+    grid-template-columns: 50%;
+  }
+  .precios__texto--titulo{
+    padding-top: 40%;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .precios__ofertas {
+    grid-template-columns: 50%;
+  }
+  .precios__texto--titulo{
+    padding-top: 40%;
+  }
+}
+@media only screen and (max-width: 320px) {
   .precios__ofertas {
     grid-template-columns: 1fr;
   }
   .precios__texto--titulo {
     padding-top: 70%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .precios__ofertas {
-    grid-template-columns: 1fr;
-  }
-  .precios__texto--titulo {
-    padding-top: 40%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .precios__ofertas {
-    grid-template-columns: 1fr;
-  }
-  .precios__texto--titulo {
-    padding-top: 40%;
   }
 }

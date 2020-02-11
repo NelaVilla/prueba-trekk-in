@@ -67,6 +67,13 @@
     grid-column-end: 13;
   }
 }
+
+@media only screen and (min-width: 1350px) {
+  .barra-nav__barras {
+    display: none !important;
+  }
+}
+
 @media  screen and (max-width: 600px) {
   .barra-nav__logo {
     justify-content: flex-start;
@@ -114,11 +121,6 @@
   }
 
   .barra-nav__boton {
-    display: none !important;
-  }
-}
-@media only screen and (min-width: 1350px) {
-  .barra-nav__barras {
     display: none !important;
   }
 }
