@@ -1,3 +1,4 @@
+
 .footer {
   display: grid;
   align-items: center;
@@ -20,25 +21,12 @@
     color: $gray;
   }
 }
-@media screen and (max-width: 768px) {
-  .footer__listado {
-    justify-content: center;
-    font-size: $medium;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  .footer__marca {
-    justify-content: center;
-    font-size: $medium;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-}
 @media screen and (max-width: 600px) {
   .footer__listado {
     justify-content: center;
     font-size: $small;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .footer__marca {
@@ -48,10 +36,13 @@
     grid-column-end: 3;
   }
 }
+
 @media screen and (max-width: 320px) {
   .footer__listado {
     justify-content: center;
     font-size: $x-small;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .footer__marca {

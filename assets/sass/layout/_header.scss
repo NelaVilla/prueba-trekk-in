@@ -1,8 +1,10 @@
+
 .banner__fondo {
-  background-image: url("../img/bg-hero.png");
+  background-image: url("../img/bg-hero.svg");
   background-position: center;
   background-size: cover;
   height: 51rem;
+  width: 100%;
 }
 
 .banner__contenido {
@@ -31,51 +33,28 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .banner__fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 74rem;
-    background-position: right;
-  }
-
-  .banner__contenido--titulo {
-    text-align: center;
-    display: grid;
-  }
-
-  .banner__contenido--subtitulo {
-    display: flex;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .banner__fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 150%;
-    height: 74rem;
-    background-position: right;
+  .banner__fondo{
+      background-position: top;
   }
 
   .banner__contenido--titulo {
     text-align: center;
     display: grid;
+    width: 70%;
   }
 
   .banner__contenido--subtitulo {
     display: flex;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 320px) {
   .banner__fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 230%;
-    height: 74rem;
-    background-position: right;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: contain;
   }
 
   .banner__contenido--titulo {
@@ -85,5 +64,6 @@
 
   .banner__contenido--subtitulo {
     display: flex;
+    width: 80%;
   }
 }
